@@ -1,5 +1,111 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+html {
+  font-size: 16px;
+}
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  color: var(--text-color, #f1b2ce);
+  font-family: var(--fonts), "Courier New", Courier, monospace;
+  font-size: var(--main-text-size, 18px);
+  line-height: 23.4px;
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  height: 100vh;
+  min-height: 668px;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-inline-end: 1px solid var(--main-color, #ff0070);
+  border-block-start: 1px solid var(--main-color, #ff0070);
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border-inline-end: 1px solid var(--main-color, #ff0070);
+  border-block-start: 1px solid var(--main-color, #ff0070);
+  transform: rotate(180deg);
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.rec {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.rec::after {
+  content: "";
+  display: inline-block;
+  margin-inline: 9px;
+  margin-block-end: 2px;
+  border-radius: 50%;
+  border-radius: 50%;
+  background-color: var(--main-color, #ff0070);
+  inline-size: 9px;
+  block-size: 9px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-self: start;
+  margin-top: 10px;
+}
+
+.header__theme-menu-button {
+  --text-color: var(--main-color, #ff0070);
+  border: none;
+  padding: 13px;
+  color: var(--text-color, #ff0070);
+  text-transform: lowercase;
+  background: transparent;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--main-color, #ff0070);
+}
+
+.header__title {
+  color: var(--title-color, #db00ff);
+  font-size: var(
+    --header-title-size,
+    clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
+  );
+  line-height: 0.825;
+  text-shadow: 4px 4px 0 var(--main-color, #ff0070);
+}
+
+.title-decor {
+  background-color: var(--main-color, #ff0070);
+  inline-size: var(--header-paragraph-size, 48%);
+}
+
+.header__paragraph {
+  --text-color: #000028;
+  justify-self: end;
+  align-self: center;
+  margin-right: 20px;
+  color: var(--text-color, #000028);
+  font-weight: var(--font-weight-bold, 800);
 }
