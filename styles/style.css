@@ -8,7 +8,7 @@ html {
   font-family: var(--fonts), "Courier New", Courier, monospace;
   font-size: var(--main-text-size, 18px);
   line-height: 23.4px;
-  background-color: var(--bg-color);
+  background-color: var(--bg-color, #000028);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
@@ -76,7 +76,7 @@ html {
 .header__theme-menu-button {
   --text-color: var(--main-color, #ff0070);
   border: none;
-  padding: 13px;
+  padding: 1.5px 13px;
   color: var(--text-color, #ff0070);
   text-transform: lowercase;
   background: transparent;
@@ -98,14 +98,58 @@ html {
 
 .title-decor {
   background-color: var(--main-color, #ff0070);
-  inline-size: var(--header-paragraph-size, 48%);
+  --text-color: #000028;
+  color: var(--text-color, #000028);
+  font-weight: var(--font-weight-bold, 800);
 }
 
 .header__paragraph {
-  --text-color: #000028;
+  inline-size: var(--header-paragraph-size, 48%);
   justify-self: end;
   align-self: center;
   margin-right: 20px;
-  color: var(--text-color, #000028);
-  font-weight: var(--font-weight-bold, 800);
+}
+
+.main{
+  background-color: var(--bg-color);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+
+.content-block{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  margin-block-end: 80px;
+  gap: 20px;
+}
+
+.content-article {
+  grid-column: 2;
+}
+
+.content__horizontal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  grid-template-rows: min-content 400px;
+  margin-block-end: 80px;
+  gap: 20px;
+}
+
+.horizontal-article{
+  grid-row: 2;
+}
+
+.content-title-text {
+  color: var(--main-color);
+  font-weight: var(--font-weight-bold);
+}
+
+.content-block:last-child .title-decor:first-of-type {
+  font-weight: var(--font-weight-bold);
+  margin-block-end: 20px;
 }
