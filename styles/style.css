@@ -14,6 +14,7 @@ html {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  margin: 0 20px;
 }
 
 .header {
@@ -101,13 +102,13 @@ html {
   --text-color: #000028;
   color: var(--text-color, #000028);
   font-weight: var(--font-weight-bold, 800);
+  
 }
 
 .header__paragraph {
   inline-size: var(--header-paragraph-size, 48%);
   justify-self: end;
   align-self: center;
-  margin-right: 20px;
 }
 
 .main{
@@ -150,6 +151,54 @@ html {
 }
 
 .content-block:last-child .title-decor:first-of-type {
-  font-weight: var(--font-weight-bold);
   margin-block-end: 20px;
+}
+
+.gallery-section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  grid-template-areas:
+    "sunset sunset ice-cream"
+    "tape books ice-cream"
+    "tape street street";
+}
+
+
+.gallery-item {
+  margin: 0; 
+  padding: 0;
+}
+
+.gallery-image {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.gallery-item:nth-child(2) {
+  grid-area: street;
+}
+
+.gallery-item:nth-child(5) {
+  grid-area: tape;
+}
+
+.gallery-item:nth-child(4 ) {
+  grid-area: sunset;
+}
+
+.gallery-item:nth-child(1) {
+  grid-area: ice-cream;
+}
+
+.gallery-item:nth-child(3) {
+  grid-area: books;
 }
