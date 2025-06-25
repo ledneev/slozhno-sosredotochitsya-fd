@@ -1,0 +1,41 @@
+.text-link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--main-color, #ff0070);
+}
+
+.text-link:hover {
+  border-bottom: 1px solid var(--text-color, #F1B2CE);
+}
+
+.text-link:focus {
+  outline: none;
+}
+
+.text-link:focus-visible {
+  outline: 1px solid var(--text-color, #F1B2CE);
+}
+
+.header__theme-menu-button {
+  --text-color: var(--main-color, #ff0070);
+  border: none;
+  padding: 1.5px 13px;
+  color: var(--text-color, #ff0070);
+  text-transform: lowercase;
+  background: transparent;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--main-color, #ff0070);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(from var(--main-color, #ff0070) r g b / 50%);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--main-color, #ff0070);
+}

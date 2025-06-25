@@ -74,19 +74,6 @@ html {
   margin-top: 10px;
 }
 
-.header__theme-menu-button {
-  --text-color: var(--main-color, #ff0070);
-  border: none;
-  padding: 1.5px 13px;
-  color: var(--text-color, #ff0070);
-  text-transform: lowercase;
-  background: transparent;
-}
-
-.header__theme-menu-button_active {
-  border: 1px solid var(--main-color, #ff0070);
-}
-
 .header-title {
   color: var(--title-color, #db00ff);
   font-size: var(
