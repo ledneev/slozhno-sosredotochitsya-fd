@@ -62,8 +62,8 @@ html {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
-  min-height: 768px;
-  margin-inline: 20px;
+  min-height: 668px;
+  /* margin-inline: var(--main-indent, 20px); */
 }
 
 .header-theme-menu-list {
@@ -95,10 +95,12 @@ html {
   justify-self: end;
   align-self: center;
   inline-size: var(--header-paragraph-size, 48%);
+  margin-block-end: 1em;
+  margin-inline-end: 20px;
 }
 
 .main {
-  margin-inline: 20px;
+  margin-inline: var(--main-indent, 20px);
   background-color: var(--bg-color);
 }
 
@@ -112,7 +114,7 @@ html {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(auto-fit, 1fr);
-  gap: 20px;
+  gap: var(--main-indent, 20px);
   margin-block-end: 80px;
 }
 
@@ -124,7 +126,7 @@ html {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
   grid-template-rows: min-content 1fr;
-  gap: 20px;
+  gap: var(--main-indent, 20px);
   margin-block-end: 80px;
 }
 
@@ -137,14 +139,19 @@ html {
   font-weight: var(--font-weight-bold);
 }
 
-.content-block:last-child .title-decor:first-of-type {
-  margin-block-end: 20px;
+.content-article-text {
+  --main-indent: 10px;
+  margin-block-end: var(--main-indent, 10px);
+}
+
+.content-article-title {
+  margin-block-end: var(--main-indent, 20px);
 }
 
 .gallery-section {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--main-indent, 20px);
 }
 
 .gallery {
@@ -155,7 +162,7 @@ html {
     "sunset sunset ice-cream"
     "tape books ice-cream"
     "tape street street";
-  gap: 20px;
+  gap: var(--main-indent, 20px);
 }
 
 .gallery-item {
