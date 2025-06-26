@@ -66,6 +66,8 @@ html {
   --main-color: var(--text-color);
 }
 
+/* header section */
+
 .header {
   position: relative;
   display: grid;
@@ -112,6 +114,8 @@ html {
   padding: 0 var(--main-indent, 20px);
   background-color: var(--bg-color);
 }
+
+/* text content section */
 
 .content {
   display: grid;
@@ -161,6 +165,8 @@ html {
   margin-block-end: var(--main-indent, 20px);
 }
 
+/* gallery section */
+
 .gallery-section {
   display: flex;
   flex-direction: column;
@@ -208,6 +214,8 @@ html {
 .gallery-item:nth-child(3) {
   grid-area: books;
 }
+
+/* footer section */
 
 .footer {
   position: relative;
