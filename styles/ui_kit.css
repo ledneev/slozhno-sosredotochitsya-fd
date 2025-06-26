@@ -4,7 +4,7 @@
 }
 
 .text-link:hover {
-  border-bottom: 1px solid var(--text-color, #F1B2CE);
+  border-bottom: 1px solid var(--text-color, #f1b2ce);
 }
 
 .text-link:focus {
@@ -12,16 +12,19 @@
 }
 
 .text-link:focus-visible {
-  outline: 1px solid var(--text-color, #F1B2CE);
+  outline: 1px solid var(--text-color, #f1b2ce);
 }
 
 .header__theme-menu-button {
-  --text-color: var(--main-color, #ff0070);
   border: none;
   padding: 1.5px 13px;
-  color: var(--text-color, #ff0070);
+  color: var(--main-color, #ff0070);
   text-transform: lowercase;
   background: transparent;
+}
+
+.theme-light .header__theme-menu-button {
+  color: var(--text-color, #353430);
 }
 
 .header__theme-menu-button_active {
@@ -38,4 +41,16 @@
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--main-color, #ff0070);
+}
+
+.theme-light .header__theme-menu-button_active {
+  border: 1px solid var(--text-color, #353430);
+}
+
+.theme-light .header__theme-menu-button:hover {
+  border: 1px solid rgba(from var(--text-color, #353430) r g b / 50%);
+}
+
+.theme-light .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--text-color, #353430);
 }

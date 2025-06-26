@@ -1,12 +1,11 @@
 @media (width <=800px) {
-
   .header {
     grid-template-rows: minmax(300px, 460px) min-content 1fr;
   }
 
-  .header-paragraph{
-    padding-right: 4px;
+  .header-paragraph {
     margin-block-end: 1em;
+    padding-right: 4px;
   }
 
   .content__horizontal {
@@ -16,11 +15,11 @@
   .header-theme-menu-list {
     flex-direction: column;
     justify-self: end;
-    margin-block-start: 192px;
     margin-inline-end: 20px;
+    margin-block-start: 192px;
   }
 
-  .horizontal{
+  .horizontal {
     max-inline-size: 30%;
   }
 }
@@ -39,15 +38,14 @@
   }
 
   .header-title {
-    --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+    --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .header-theme-menu-list {
     flex-direction: column;
     justify-self: end;
     margin-inline-end: 5px;
-    margin-block: 18%;
-
+    margin-block-start: 18%;
   }
 
   .header-paragraph {
@@ -81,12 +79,12 @@
     margin-block-end: 50px;
   }
 
-  .horizontal{
+  .horizontal {
     max-inline-size: initial;
   }
 
-  .gallery-section{
-    --main-indent: 10px
+  .gallery-section {
+    --main-indent: 10px;
   }
 
   .gallery {
