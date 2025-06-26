@@ -22,6 +22,10 @@
   .horizontal {
     max-inline-size: 30%;
   }
+
+  .footer {
+    margin-block-start: 40px;
+  }
 }
 
 @media (width <=400px) {
@@ -35,6 +39,7 @@
     margin-inline: 0px;
     padding: 10px;
     padding-bottom: 40px;
+    margin-block-end: 40px;
   }
 
   .header-title {
@@ -56,7 +61,7 @@
   }
 
   .main {
-    margin-inline: 10px;
+    padding: 0 10px;
   }
 
   .content {
@@ -85,8 +90,9 @@
 
   .gallery-section {
     --main-indent: 10px;
+    block-size: 209vh;
   }
-
+  
   .gallery {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -99,6 +105,7 @@
   }
 
   .footer {
+    --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-block-start: 40px;
   }
 }
