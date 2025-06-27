@@ -19,8 +19,8 @@ html {
 .decorated-zone::before {
   content: "";
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
   border-inline-end: 1px solid var(--button-color, #ff0070);
   border-block-start: 1px solid var(--button-color, #ff0070);
   inline-size: 25px;
@@ -30,8 +30,8 @@ html {
 .decorated-zone::after {
   content: "";
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 20px;
+  left: 20px;
   border-inline-end: 1px solid var(--button-color, #ff0070);
   border-block-start: 1px solid var(--button-color, #ff0070);
   transform: rotate(180deg);
@@ -104,21 +104,23 @@ html {
 /*main */
 
 .main {
-  padding: 0 var(--main-indent, 20px);
+  margin: 0 var(--main-indent, 20px); 
 }
 
 .about {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2.06fr;
   grid-template-rows: repeat(3, auto);
   gap: var(--main-indent, 20px);
   margin-block-end: 60px;
 }
 
 .problems {
-  display: grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: fit-content 1fr;
   gap: 20px;
-  margin-block-end: 60px;
+  margin-block-end: 80px;
 }
 
 .problems > .content-article:nth-child(n + 2) {
@@ -128,11 +130,20 @@ html {
 
 .tips {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2.06fr;
   grid-template-rows: 1em repeat(3, auto);
   gap: var(--main-indent, 20px);
   margin-block-end: 80px;
+  
 }
+
+.tips .content-article-text {
+  font-weight: 400;
+}
+
+  .tips article {
+     margin-top: 1.5px;
+  }
 
 .content-article {
   grid-column: 2;
@@ -222,6 +233,7 @@ html {
   align-content: center;
   height: 100vh;
   margin-block-start: 60px;
+  
 }
 
 .footer-title {

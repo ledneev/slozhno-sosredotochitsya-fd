@@ -1,13 +1,25 @@
 @media (width <=800px) {
   .header {
     grid-template-rows: minmax(300px, 460px) min-content 1fr;
+    margin-inline-end: 1em;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 1px;
+  }
+
+  .decorated-zone::after {
+    left: 20px;
+    bottom: 20px;
   }
 
   .header-paragraph {
-    margin-block-end: 1em;
-    padding-right: 4px;
+    margin-inline-end: .3em;
   }
-
+  .about {
+    grid-template-columns: 1fr 2fr;
+  }
   .problems {
     display: flex;
     flex-direction: column;
@@ -18,17 +30,29 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1em repeat(3, auto);
+    margin-block-end: 76px;
   }
+
+  /* .tips article {
+     margin-top: 1.5px;
+  } */
 
   .header-theme-menu-list {
     flex-direction: column;
     justify-self: end;
-    margin-inline-end: 20px;
-    margin-block-start: 192px;
+    margin-block-start: 191px;
   }
 
   .problems .content-title-text {
     max-inline-size: 30%;
+  }
+
+  .footer {
+    margin-inline-end: 20px;
+  }
+  
+  .footer-title {
+    margin-inline-start: 20px;
   }
 
 }
@@ -36,6 +60,16 @@
 @media (width <=400px) {
   .page {
     inline-size: 375px;
+  }
+
+  .decorated-zone::before {
+    top: 10px;
+    right: 10px;
+  }
+
+  .decorated-zone::after {
+    left: 10px;
+    bottom: 10px;
   }
 
   .header {
@@ -66,7 +100,7 @@
   }
 
   .main {
-    padding: 0 10px;
+    margin: 0 10px;
   }
 
   .about {
@@ -90,6 +124,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     margin-block-end: 50px;
+  }
+
+   .tips article {
+     margin-top: 0;
   }
 
   .content-article {
@@ -123,9 +161,11 @@
 
   .footer {
     margin-block-start: 40px;
+    margin-inline-end: 0;
   }
 
   .footer-title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    margin-inline-start: 0;
   }
 }
