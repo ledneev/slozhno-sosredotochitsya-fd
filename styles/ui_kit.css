@@ -18,21 +18,17 @@
 .header__theme-menu-button {
   border: none;
   padding: 1.5px 13px;
-  color: var(--main-color, #ff0070);
+  color: var(--button-color, #ff0070);
   text-transform: lowercase;
   background: transparent;
 }
 
-.theme-light .header__theme-menu-button {
-  color: var(--text-color, #353430);
-}
-
 .header__theme-menu-button_active {
-  border: 1px solid var(--main-color, #ff0070);
+  border: 1px solid var(--button-color, #ff0070);
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(from var(--main-color, #ff0070) r g b / 50%);
+  border: 1px solid rgba(from var(--button-color, #ff0070) r g b / 50%);
 }
 
 .header__theme-menu-button:focus {
@@ -40,17 +36,5 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--main-color, #ff0070);
-}
-
-.theme-light .header__theme-menu-button_active {
-  border: 1px solid var(--text-color, #353430);
-}
-
-.theme-light .header__theme-menu-button:hover {
-  border: 1px solid rgba(from var(--text-color, #353430) r g b / 50%);
-}
-
-.theme-light .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--text-color, #353430);
+  border-bottom: 1px solid var(--button-color, #ff0070);
 }

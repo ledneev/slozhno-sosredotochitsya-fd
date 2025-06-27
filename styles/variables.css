@@ -4,6 +4,6 @@
   --main-text-size: 1.125rem;
   --header-paragraph-size: 48%;
   --header-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  --font-weight-bold: 800;
+  --font-weight-bold: 700;
   --main-indent: 20px;
 }

@@ -8,10 +8,18 @@
     padding-right: 4px;
   }
 
-  .content__horizontal {
+  .problems {
     display: flex;
     flex-direction: column;
+    margin-block-end: 80px;
   }
+
+  .tips {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1em repeat(3, auto);
+  }
+
   .header-theme-menu-list {
     flex-direction: column;
     justify-self: end;
@@ -19,7 +27,7 @@
     margin-block-start: 192px;
   }
 
-  .horizontal {
+  .problems .content-title-text {
     max-inline-size: 30%;
   }
 
@@ -37,9 +45,9 @@
     grid-template-columns: 1fr;
     grid-template-rows: 230px auto auto;
     margin-inline: 0px;
+    margin-block-end: 30px;
     padding: 10px;
     padding-bottom: 40px;
-    margin-block-end: 40px;
   }
 
   .header-title {
@@ -64,15 +72,26 @@
     padding: 0 10px;
   }
 
-  .content {
+  .about {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    margin-block-end: 50px;
   }
 
-  .content-block {
+  .problems {
+    margin-block-end: 50px;
+  }
+
+  .problems .content-title-text {
+    width: 100%;
+    max-inline-size: initial;
+  }
+
+  .tips {
+    display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: auto;
+    grid-template-rows: auto;
     margin-block-end: 50px;
   }
 
@@ -80,19 +99,16 @@
     grid-column: 1;
   }
 
-  .content__horizontal {
-    margin-block-end: 50px;
-  }
-
-  .horizontal {
-    max-inline-size: initial;
+  .content-article-title {
+    --main-indent: 0;
+    grid-column: 1;
   }
 
   .gallery-section {
     --main-indent: 10px;
     block-size: 209vh;
   }
-  
+
   .gallery {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -104,8 +120,8 @@
     gap: 10px;
   }
 
-  .footer {
-    --header-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin-block-start: 40px;
+  .footer-title {
+    margin-block-end: 40px;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
