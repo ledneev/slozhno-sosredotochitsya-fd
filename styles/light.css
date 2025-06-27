@@ -19,6 +19,7 @@
   --bg-color: transparent;
   --bg-image: url(../images/cover-image-light.png);
   --display-rec: none;
+  --subtitle-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -30,5 +31,6 @@
     --bg-color: transparent;
     --bg-image: url(../images/cover-image-light.png);
     --display-rec: none;
+    --subtitle-color: #353430;
   }
 }

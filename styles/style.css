@@ -88,7 +88,7 @@ html {
 }
 
 .title-decor {
-  color: var(--subtitle-text, #000028);
+  color: var(--subtitle-color, #000028);
   font-weight: var(--font-weight-bold, 800);
   background-color: var(--main-color, #ff0070);
 }
