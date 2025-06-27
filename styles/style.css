@@ -191,6 +191,7 @@ html {
   object-fit: cover;
   inline-size: 100%;
   block-size: 100%;
+  display: block;
 }
 
 .gallery-item:nth-child(2) {
@@ -220,7 +221,7 @@ html {
   display: grid;
   align-content: center;
   height: 100vh;
-  margin-block-start: 40px;
+  margin-block-start: 60px;
 }
 
 .footer-title {
@@ -232,4 +233,5 @@ html {
   line-height: 0.825;
   text-align: center;
   text-shadow: 2px 2px 0 var(--main-color, #ff0070);
+  
 }

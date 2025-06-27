@@ -31,9 +31,6 @@
     max-inline-size: 30%;
   }
 
-  .footer {
-    margin-block-start: 40px;
-  }
 }
 
 @media (width <=400px) {
@@ -45,7 +42,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 230px auto auto;
     margin-inline: 0px;
-    margin-block-end: 30px;
+    margin-block-end: 40px;
     padding: 10px;
     padding-bottom: 40px;
   }
@@ -120,8 +117,15 @@
     gap: 10px;
   }
 
+  .gallery img {
+    display: block;
+  }
+
+  .footer {
+    margin-block-start: 40px;
+  }
+
   .footer-title {
-    margin-block-end: 40px;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
