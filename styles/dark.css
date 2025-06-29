@@ -15,7 +15,7 @@
   --text-color: #f1b2ce;
   --title-color: #db00ff;
   --main-color: #ff0070;
-  --subtitle-color: #0028;
+  --subtitle-color: #000028;
   --button-color: #ff0070;
   --bg-image: url(../images/cover-image-dark.png);
   --display-rec: block;
@@ -29,6 +29,6 @@
     --button-color: #ff0070;
     --bg-image: url(../images/cover-image-dark.png);
     --display-rec: block;
-    --subtitle-color: #0028;
+    --subtitle-color: #000028;
   }
 }

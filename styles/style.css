@@ -41,9 +41,11 @@ html {
 
 .rec {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 22px;
+  right: 22px;
   display: var(--display-rec);
+  color: var(--button-color, #ff0070);
+  text-transform: uppercase;
 }
 
 .rec::after {
@@ -52,8 +54,8 @@ html {
   margin-inline: 9px;
   margin-block-end: 2px;
   border-radius: 50%;
-  box-shadow: 0 0 10px 4px var(--main-color, #ff0070);
-  background-color: var(--main-color, #ff0070);
+  box-shadow: 0 0 4px 2px var(--button-color, #ff0070);
+  background-color: var(--button-color, #ff0070);
   inline-size: 9px;
   block-size: 9px;
 }
@@ -123,9 +125,14 @@ html {
   margin-block-end: 80px;
 }
 
+.problems .content-title-text {
+  grid-column: 1/-1;
+  max-width: 30%;
+}
+
 .problems > .content-article:nth-child(n + 2) {
   grid-column: auto;
-  grid-row: 2;
+  grid-row: auto;
 }
 
 .tips {
@@ -134,6 +141,10 @@ html {
   grid-template-rows: 1em repeat(3, auto);
   gap: var(--main-indent, 20px);
   margin-block-end: 80px;
+}
+
+.tips .content-title-text {
+  grid-row: span 2;
 }
 
 .tips .content-article-text {
@@ -198,10 +209,10 @@ html {
 }
 
 .gallery-image {
+  display: block;
   object-fit: cover;
   inline-size: 100%;
   block-size: 100%;
-  display: block;
 }
 
 .gallery-item:nth-child(2) {
